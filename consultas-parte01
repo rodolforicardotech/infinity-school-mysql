@@ -1,0 +1,54 @@
+SELECT categoria_id, nome FROM categoria
+
+SELECT primeiro_nome, ultimo_nome, email FROM funcionario
+
+-- ISSO É UM COMENTÁRIO
+-- tabela: funcionario
+-- nome, sobrenome, email
+
+-- Quantos atores existem na tabela atores?
+SELECT COUNT(*) FROM ator
+
+-- Qual ator/atriz tem o ID 31?
+SELECT * FROM ator WHERE ator_id = 31
+
+-- Qual ID do Brasil?
+SELECT * FROM pais WHERE pais = 'Brazil'
+
+-- Quais os países iniciam com a letra A
+SELECT * FROM pais WHERE pais LIKE 'A%'
+SELECT COUNT(*) FROM pais WHERE pais LIKE 'A%'
+
+-- Quais os países iniciam com a letra P
+SELECT * FROM pais WHERE pais LIKE 'P%'
+SELECT COUNT(*) FROM pais WHERE pais LIKE 'P%'
+
+-- Quais os países terminam com a letra O
+SELECT * FROM pais WHERE pais LIKE '%O'
+SELECT COUNT(*) FROM pais WHERE pais LIKE '%O'
+
+-- Quais os países tenha a sílaba NA no nome
+SELECT * FROM pais WHERE pais LIKE '%na%'
+SELECT COUNT(*) FROM pais WHERE pais LIKE '%na%'
+
+-- Quais as informações para o valor > 3
+SELECT * FROM PAGAMENTO WHERE valor > 3
+SELECT COUNT(*) FROM PAGAMENTO WHERE valor > 3
+
+-- Qual a média dos valores dos pagamentos?
+-- AVG
+SELECT AVG(valor) AS Média FROM pagamento
+
+-- Qual a soma dos valores dos pagamentos?
+-- SUM
+
+SELECT SUM(valor) AS Soma FROM pagamento
+
+-- Qual o menor valor pago?
+-- MIN
+SELECT MIN(valor) AS Soma FROM pagamento
+
+-- Qual o maior valor pago?
+-- MAX
+SELECT MAX(valor) AS Soma FROM pagamento
+
