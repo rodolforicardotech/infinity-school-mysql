@@ -1,0 +1,102 @@
+https://github.com/rodolforicardotech/infinity-school-mysql/blob/main/sakila_tiagopassos.sql
+
+-- SELECT * FROM ator
+
+-- SELECT primeiro_nome FROM ator
+
+-- SELECT primeiro_nome, ultimo_nome FROM ator 
+
+-- SELECT * FROM categoria
+
+-- SELECT COUNT(*) FROM categoria
+
+-- Quantos atores existem na tabela ator?
+-- SELECT COUNT(*) FROM ator
+
+-- Qual o ator tem o id 33?
+-- SELECT * FROM ator WHERE ator_id = 33
+
+-- SELECT * FROM pais WHERE pais = "Brazil"
+
+-- Média de valores dos alugueis?
+-- SELECT AVG(valor) FROM pagamento
+
+-- Valores MINIMO E MAXIMO da coluna VALOR?
+
+-- SELECT MIN(valor) FROM pagamento
+-- SELECT MAX(valor) FROM pagamento
+
+-- Ordenar os valores da coluna valor de menor para o maior:
+SELECT * FROM pagamento ORDER BY valor
+
+-- Ordenar os valores da coluna valor do maior para o menor:
+SELECT * FROM pagamento ORDER BY valor DESC
+
+-- Encontrar os atores/atrizes que começam com a letra A
+SELECT * FROM ator WHERE primeiro_nome LIKE 'A%'
+
+-- Encontrar os atores/atrizes que terminam com a letra O
+SELECT * FROM ator WHERE primeiro_nome LIKE '%O'
+
+-- Encontrar atores / atrizes que a segunda letra do sobrenome seja E
+SELECT * FROM ator WHERE ultimo_nome LIKE '_E%'
+
+-- Encontrar atores / atrizes que a sílaba NA no nome?
+SELECT * FROM ator WHERE primeiro_nome LIKE '%NA%'
+
+-- Encontrar na tabela pagamento os valores maiores do que 3
+SELECT * FROM pagamento WHERE valor > 3
+
+-- Contar quantos funcionários existem na tabela pagamentos
+SELECT COUNT(DISTINCT funcionario_id) FROM pagamento
+
+-- Contar quantos CLIENTES existem na tabela pagamentos
+SELECT COUNT(DISTINCT cliente_id) AS "Número de Clientes" FROM pagamento
+
+
+-- Numa mesma consulta, indicar a SOMA dos valores e o número de Clientes
+SUM
+
+SELECT SUM(valor) as "Valor Total", COUNT(DISTINCT cliente_id) AS "Número de Clientes" FROM pagamento
+
+-- Criar, usar e apagar
+CREATE DATABASE paraapagar
+USE paraapagar
+DROP DATABASE paraapagar
+
+
+USE infinity06
+SELECT * FROM aluguel
+
+!!!NÃO FAÇAM UPDATE SEM WHERE!!!!!!!!
+
+use aula01
+UPDATE aluguel SET funcionario_id = 100 WHERE cliente_id = 130
+
+Select * from ator
+UPDATE ator SET ultimo_nome = "ATOR 02" WHERE ator_id = 2
+
+CRIANDO TABELAS:
+CREATE TABLE funcionarios (id INT, nome VARCHAR(255), setor INT, cargo VARCHAR(255), salario DECIMAL)
+
+select * from funcionarios
+
+
+INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (1, "Cleide Campos", 1, "Secretária", 1000)
+
+
+
+https://github.com/rodolforicardotech/infinity-school-mysql/blob/main/quest%C3%B5es-parte02
+
+http://dontpad.com/infinity-mysql
+
+
+
+
+APLICATIVO CITADO:
+MIMO APP
+https://getmimo.com/
+
+
+ATIVIDADE FINAL:
+https://github.com/rodolforicardotech/infinity-school-mysql/blob/main/atividade%20final
