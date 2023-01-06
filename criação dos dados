@@ -2,18 +2,18 @@ CREATE TABLE funcionarios (id int, nome varchar(255), setor int, cargo varchar(2
 
 -- TABELA: Funcionários
 -- Colunas:
--- ID INT
+-- codigo INT
 -- Nome VARCHAR (255)
 -- Setor INT
 -- Cargo VARCHAR (255)
 -- Salario DECIMAL
 
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (2, 'Cleide Campos', 1, 'Secretária', 1000.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (3, 'Andreia Batista', 6, 'Programadora', 1500.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (4, 'Cristiano Souza', 6, 'Programador', 1500.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (5, 'Mario Souza', 4, 'Analista', 2200.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (6, 'Ana Silva', 4, 'Secretária', 1000.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (7, 'Silvia Soares', 5, 'Supervisora', 1650.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (8, 'José da Silva', 1, 'Programador', 1500.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (9, 'Manoel Batista', 1, 'Projetista', 2500.00);
-INSERT INTO funcionarios (id, nome, setor, cargo, salario) VALUES (10, 'João Silva', 4, 'Supervisor', 1650.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (2, 'Cleide Campos', 1, 'Secretária', 1000.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (3, 'Andreia Batista', 6, 'Programadora', 1500.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (4, 'Cristiano Souza', 6, 'Programador', 1500.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (5, 'Mario Souza', 4, 'Analista', 2200.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (6, 'Ana Silva', 4, 'Secretária', 1000.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (7, 'Silvia Soares', 5, 'Supervisora', 1650.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (8, 'José da Silva', 1, 'Programador', 1500.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (9, 'Manoel Batista', 1, 'Projetista', 2500.00);
+INSERT INTO funcionarios (codigo, nome, setor, cargo, salario) VALUES (10, 'João Silva', 4, 'Supervisor', 1650.00);
